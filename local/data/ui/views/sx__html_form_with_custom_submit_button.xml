@@ -1,0 +1,43 @@
+<dashboard script="sx_html_form_with_custom_submit_button.js">
+  <label>SX002 - HTML form with custom submit button</label>
+  <row>
+    <panel>
+      <html>
+        <h1>This is a HTML panel with some inputs</h1>
+        This form needs a custom Javascript file to enable the submit action (filename: appserver/static/sx_html_form_with_custom_submit_button.js)
+        <br/>
+        <table class="table">
+          <tr>
+            <th scope="row">Enter value for input1:</th>
+            <td>
+              <input type="text" id="sx_input1"/>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Enter value for input2:</th>
+            <td>
+              <textarea id="sx_input2" rows="5"/>
+            </td>
+          </tr>
+        </table>
+        <br/>
+        <div>
+         <button type="button" id="sx_button" class="btn btn-primary">Submit form data!</button>
+        </div>
+      </html>
+    </panel>
+  </row>
+  <row>
+    <panel>
+      <table>
+        <search>
+          <query>| makeresults | eval input1="$sx_input1$", input2="$sx_input2$"</query>
+          <earliest>$earliest$</earliest>
+          <latest>$latest$</latest>
+        </search>
+        <option name="drilldown">none</option>
+        <option name="refresh.display">progressbar</option>
+      </table>
+    </panel>
+  </row>
+</dashboard>

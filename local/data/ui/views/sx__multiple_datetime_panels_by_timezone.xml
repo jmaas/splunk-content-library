@@ -1,0 +1,53 @@
+<dashboard>
+  <label>SX001 - Multiple datetime panels by timezone</label>
+  <row>
+    <panel>
+      <single>
+        <title>Europe/Amsterdam</title>
+        <search>
+          <query>| savedsearch "SX001 - Get datetime by timezone" TZ="Europe/Amsterdam"</query>
+          <earliest>$earliest$</earliest>
+          <latest>$latest$</latest>
+          <refresh>1m</refresh>
+          <refreshType>delay</refreshType>
+        </search>
+        <option name="drilldown">none</option>
+        <option name="rangeColors">["0x53a051","0x0877a6","0xf8be34","0xf1813f","0xdc4e41"]</option>
+        <option name="refresh.display">none</option>
+        <option name="useThousandSeparators">0</option>
+      </single>
+    </panel>
+    <panel>
+      <single>
+        <title>America/New_York</title>
+        <search>
+          <query>| savedsearch "SX001 - Get datetime by timezone" TZ="America/New_York"</query>
+          <earliest>$earliest$</earliest>
+          <latest>$latest$</latest>
+          <refresh>1m</refresh>
+          <refreshType>delay</refreshType>
+        </search>
+        <option name="drilldown">none</option>
+        <option name="rangeColors">["0x53a051","0x0877a6","0xf8be34","0xf1813f","0xdc4e41"]</option>
+        <option name="refresh.display">none</option>
+        <option name="useThousandSeparators">0</option>
+      </single>
+    </panel>
+    <panel>
+      <single>
+        <title>Europe/Moscow</title>
+        <search>
+          <query>| savedsearch "SX001 - Get datetime by timezone" TZ="Europe/Moscow"</query>
+          <earliest>$earliest$</earliest>
+          <latest>$latest$</latest>
+          <refresh>1m</refresh>
+          <refreshType>delay</refreshType>
+        </search>
+        <option name="drilldown">none</option>
+        <option name="rangeColors">["0x53a051","0x0877a6","0xf8be34","0xf1813f","0xdc4e41"]</option>
+        <option name="refresh.display">none</option>
+        <option name="useThousandSeparators">0</option>
+      </single>
+    </panel>
+  </row>
+</dashboard>
