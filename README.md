@@ -6,7 +6,8 @@ Clone this repository into a fresh directory somewhere under `/opt/splunk/etc/ap
 
 # Examples included
 
-SX001 - Dashboard component showing localtime for multiuple timezones supporting daylight savings
-SX002 - Simple HTML form with custom submit button
-
+|ref|description|
+---|---|
+|SX001|Dashboard showing localtime for multiuple timezones supporting daylight savings|
+|SX002|Simple HTML form with custom submit button|
 
